@@ -5,4 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "test"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: show files in the repository
+        run: ls -al
